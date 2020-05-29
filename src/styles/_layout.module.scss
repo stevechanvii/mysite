@@ -1,0 +1,19 @@
+.container {
+}
+
+.header {
+}
+
+.content {
+}
+
+.menu {
+  background: #f4f4f4;
+  padding-top: 10px;
+
+  &__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
