@@ -1,11 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import styles from "../styles/_layout.module.scss"
-
 const Menu = () => (
-  <div className={styles.menu}>
-    <ul className={styles.menu__ul}>
+  <div className="menu">
+    <ul className="menu__ul">
       <li>
         <Link to="/">Home</Link>
       </li>
