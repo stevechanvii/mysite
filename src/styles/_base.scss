@@ -1,4 +1,6 @@
 // root pseudo class, It's like the global parent element.
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 :root {
   --color-blue: #5c629e;
   --color-blue-light: #d3daed;
@@ -53,7 +55,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.6;
 
   width: 100%;

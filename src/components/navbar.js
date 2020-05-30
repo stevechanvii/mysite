@@ -4,9 +4,11 @@ import { Link } from "gatsby"
 const Menu = () => {
   return (
     <nav className="nav">
-      <div className="nav__logo">
-        <p className="nav__logo__text"></p>
-      </div>
+      <Link to="/">
+        <div className="nav__logo">
+          <p className="nav__logo__text"></p>
+        </div>
+      </Link>
       <div className="nav__bar">
         <ul className="nav__bar-ul">
           <li>

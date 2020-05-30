@@ -68,7 +68,6 @@
   &__bar {
     width: 50%;
     padding-top: 10px;
-    font-size: 2rem;
 
     &-ul {
       list-style: none;
@@ -80,6 +79,7 @@
       color: var(--color-grey-dark-2);
       text-decoration: none;
       position: relative;
+      font-size: 2.5rem;
 
       &:active,
       &:hover {
@@ -90,8 +90,8 @@
       &::after {
         position: absolute;
         opacity: 0;
-        font-size: 3.5rem;
-        margin-top: -2rem;
+        font-size: 3.9rem;
+        margin-top: -1.9rem;
         top: 0;
         transition: all 0.3s;
       }
