@@ -1,17 +1,11 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 const Menu = () => {
-  const [isShown, setIsShown] = useState(false)
-
   return (
     <nav className="nav">
-      <div
-        className="nav__logo"
-        // onMouseEnter={() => setIsShown(true)}
-        // onMouseLeave={() => setIsShown(false)}
-      >
-        <p className="nav__logo__text">SC</p>
+      <div className="nav__logo">
+        <p className="nav__logo__text"></p>
       </div>
       <div className="nav__bar">
         <ul className="nav__bar-ul">
