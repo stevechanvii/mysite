@@ -1,8 +1,12 @@
 // root pseudo class, It's like the global parent element.
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
+  --color-blue: #5c629e;
+  --color-blue-light: #d3daed;
+  --color-blue-dark: #4b4e78;
+
+  --color-orange: #ffae04;
+  --color-orange-light: #ffbd06;
+  --color-orange-dark: #ff9900;
 
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -51,15 +55,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-}
 
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  color: #333;
-  text-decoration: none;
-
-  &:active &:hover {
-    outline-width: 0;
-  }
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }

@@ -1,4 +1,7 @@
 .container {
+  margin: 0 auto;
+  max-width: 960;
+  padding: 0 2rem 2rem;
 }
 
 .header {
@@ -7,14 +10,117 @@
 .content {
 }
 
-.menu {
-  background: #f4f4f4;
-  padding-top: 10px;
-  font-size: 2rem;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
 
-  &__ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    background-color: #f2df20;
+    transition: all 0.5s;
+    transform-origin: left;
+    position: relative;
+
+    &:hover {
+      transform: scaleX(2);
+    }
+
+    &:hover &__text {
+      transform: translateX(-5rem);
+      // transform: scaleX(0.5);
+      // opacity: 0;
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #323330;
+      font-size: 2rem;
+      margin-right: 0.5rem;
+      transition: all 0.5s;
+    }
+  }
+
+  &__bar {
+    width: 50%;
+    padding-top: 10px;
+    font-size: 2rem;
+
+    &-ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__link {
+      color: var(--color-grey-dark-2);
+      text-decoration: none;
+      position: relative;
+
+      &:active,
+      &:hover {
+        color: var(--color-blue-dark);
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        opacity: 0;
+        font-size: 3.5rem;
+        margin-top: -2rem;
+        top: 0;
+        transition: all 0.3s;
+      }
+
+      &::before {
+        content: "{";
+        left: -1rem;
+        transform: translateX(2rem);
+      }
+
+      &::after {
+        content: "}";
+        right: -1rem;
+        transform: translateX(-2rem);
+      }
+
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+        transform: translateX(0);
+        color: var(--color-blue-dark);
+      }
+    }
+  }
+}
+
+.circle {
+  width: 30%;
+  height: 40%;
+  position: absolute;
+  border-radius: 60% 70% 40% 80%;
+  z-index: -1;
+  background-image: linear-gradient(
+    to right top,
+    var(--color-orange-light),
+    var(--color-orange-dark)
+  );
+
+  &__top {
+    top: 0;
+    right: 0;
+    margin-top: -10%;
+    margin-right: -15%;
+  }
+
+  &__bottom {
+    bottom: -20%;
+    left: -10%;
   }
 }
