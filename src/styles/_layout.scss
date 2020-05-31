@@ -1,8 +1,8 @@
 .container {
   margin: 0 auto;
-  max-width: 120rem;
+  // max-width: 120rem;
   // min-height: 50rem;
-  margin: 5rem;
+  margin: 5rem 8rem;
   display: flex;
   flex-direction: column;
   height: 95vh;
@@ -13,6 +13,7 @@
 
 .content {
   flex: 1 1 auto;
+  margin-top: 1rem;
 }
 
 .nav {
@@ -22,10 +23,10 @@
   align-items: center;
 
   &__logo {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
-    background-color: #f2df20;
+    background-color: #f8e72d;
     transition: all 0.5s;
     transform-origin: left;
     position: relative;
@@ -35,7 +36,7 @@
     }
 
     &:hover &__text {
-      transform: translateX(4.3rem);
+      transform: translateX(4.7rem);
 
       &::before {
         opacity: 1;
@@ -51,7 +52,7 @@
       bottom: -0.5rem;
       right: 0;
       color: #323330;
-      font-size: 2.7rem;
+      font-size: 3rem;
       font-weight: 400;
       margin-right: 0.5rem;
 
@@ -84,7 +85,7 @@
       color: var(--color-grey-dark-2);
       text-decoration: none;
       position: relative;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
 
       &:active,
       &:hover {
@@ -96,7 +97,7 @@
       &::after {
         position: absolute;
         opacity: 0;
-        font-size: 3.9rem;
+        font-size: 3.7rem;
         margin-top: -1.9rem;
         top: 0;
         transition: all 0.3s;
@@ -119,6 +120,17 @@
         opacity: 1;
         transform: translateX(0);
         color: var(--color-blue-dark);
+      }
+
+      &-active {
+        font-weight: 400;
+        color: var(--color-blue);
+
+        &::before,
+        &::after {
+          opacity: 1;
+          transform: translateX(0);
+        }
       }
     }
   }
@@ -153,5 +165,6 @@
   font-size: 1.5rem;
   flex: 0 1 40px;
   text-align: center;
+  margin-bottom: 1rem;
   // vertical-align: bottom;
 }

@@ -4,7 +4,7 @@
 :root {
   --color-blue: #5c629e;
   --color-blue-light: #d3daed;
-  --color-blue-dark: #4b4e78;
+  --color-blue-dark: #2e358f;
 
   --color-orange: #5f5a4f;
   --color-orange-light: #ffbd06;
@@ -48,8 +48,8 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 
-  @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
+  @media only screen and (max-width: $bp-largest) {
+    // font-size: 50%;
   }
 }
 

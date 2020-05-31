@@ -2,6 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 const Menu = () => {
+  const items = [
+    { "": "About Me" },
+    { experience: "Experience" },
+    { projects: "Projects" },
+    { contact: "Contact" },
+  ]
+
   return (
     <nav className="nav">
       <Link to="/">
@@ -11,26 +18,17 @@ const Menu = () => {
       </Link>
       <div className="nav__bar">
         <ul className="nav__bar-ul">
-          <li>
-            <Link className="nav__bar__link" to="/">
-              About Me
-            </Link>
-          </li>
-          <li>
-            <Link className="nav__bar__link" to="/about">
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link className="nav__bar__link" to="/services">
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link className="nav__bar__link" to="/blog">
-              Contact
-            </Link>
-          </li>
+          {items.map(item => (
+            <li>
+              <Link
+                className={`nav__bar__link`}
+                activeClassName="nav__bar__link-active"
+                to={`/${Object.keys(item)[0]}`}
+              >
+                {Object.values(item)[0]}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

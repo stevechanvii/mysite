@@ -22,7 +22,8 @@ const IndexPage = () => (
       <div className="home__main">
         <h1 className="home__main__name">Danyang Chen</h1>
         <p className="home__main__desc">
-          Hi I'm Steve, welcome to my portfolio. I am a photographer who codes{" "}
+          Hi I'm Steve, welcome to my portfolio. I am a front-end developer who
+          loves photography and creating.
         </p>
         <a href={resume} className="home__main__download" target="_blank">
           <span className="home__main__download-visible">Download Resume</span>
@@ -31,7 +32,9 @@ const IndexPage = () => (
           </span>
         </a>
       </div>
-      <div className="home__svg"></div>
+      <div className="home__svg">
+        <Image />
+      </div>
     </div>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
