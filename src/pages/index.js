@@ -24,7 +24,9 @@ const IndexPage = () => (
         <div className="home__main__intro">
           <p className="home__main__intro__desc">
             Hi I'm Steve, welcome to my portfolio. I am a front-end developer
-            who loves photography and creating.
+            who loves photography and creating. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Consectetur veniam eum assumenda
+            libero quod recusandae laboriosam voluptates.
           </p>
           <a
             href={resume}
