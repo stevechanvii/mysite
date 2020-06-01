@@ -1,149 +1,121 @@
 import React from "react"
 import Layout from "../components/layout"
 
-import Timeline from "../components/Timeline/Timeline"
-import TimelineItem from "../components/Timeline/TimelineItem"
+import VerticalTimeline from "../components/Timeline/VerticalTimeline"
+import VerticalTimelineElement from "../components/Timeline/VerticalTimelineElement"
+
+import WorkIcon from "@material-ui/icons/Work"
+import SchoolIcon from "@material-ui/icons/School"
+import StarIcon from "@material-ui/icons/Star"
 
 const ExperiencePage = () => {
   return (
     <Layout>
-      {/* <div className="exp">
-        <h1 className="exp__title">Our Services</h1>
-        <p className="exp__details">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-          molestias, repellat quaerat voluptate numquam deserunt alias provident
-          est rerum iste velit iure a voluptatem excepturi quas sequi? Sed, hic
-          delectus!
-        </p>
-        <p className="exp__details">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
-          molestias, repellat quaerat voluptate numquam deserunt alias provident
-          est rerum iste velit iure a voluptatem excepturi quas sequi? Sed, hic
-          delectus!
-        </p>
-      </div> */}
       <div className="exp">
-        <Timeline lineColor={"#ddd"}>
-          <TimelineItem
-            key="001"
-            dateText="11/2010 – Present"
-            style={{ color: "#e86971" }}
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+            date="2011 - present"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
           >
-            <h3>Title, Company</h3>
-            <h4>Subtitle</h4>
+            <h3 className="vertical-timeline-element-title">
+              Creative Director
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
             <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
+              Creative Direction, User Experience, Visual Design, Project
+              Management, Team Leading
             </p>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-          </TimelineItem>
-          <TimelineItem
-            key="002"
-            dateText="04/2009 – 11/2010"
-            dateInnerStyle={{ background: "#61b8ff", color: "#000" }}
-            bodyContainerStyle={{
-              background: "#ddd",
-              padding: "20px",
-              borderRadius: "8px",
-              boxShadow: "0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)",
-            }}
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2010 - 2011"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
           >
-            <h3 style={{ color: "#61b8ff" }}>Title, Company</h3>
-            <h4 style={{ color: "#61b8ff" }}>Subtitle</h4>
+            <h3 className="vertical-timeline-element-title">Art Director</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              San Francisco, CA
+            </h4>
             <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
+              Creative Direction, User Experience, Visual Design, SEO, Online
+              Marketing
             </p>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-          </TimelineItem>
-          <TimelineItem
-            key="003"
-            dateComponent={
-              <div
-                style={{
-                  display: "block",
-                  float: "left",
-                  padding: "10px",
-                  background: "rgb(150, 150, 150)",
-                  color: "#fff",
-                }}
-              >
-                11/2008 – 04/2009
-              </div>
-            }
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2008 - 2010"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
           >
-            <h3>Title, Company</h3>
-            <h4>Subtitle</h4>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-          </TimelineItem>
-          <TimelineItem
-            key="004"
-            dateText="08/2008 – 11/2008"
-            dateInnerStyle={{ background: "#76bb7f" }}
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Los Angeles, CA
+            </h4>
+            <p>User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2006 - 2008"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<WorkIcon />}
           >
-            <h3>Title, Company</h3>
-            <h4>Subtitle</h4>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-            <p>
-              Est incididunt sint eu minim dolore mollit velit velit commodo ex
-              nulla exercitation. Veniam velit adipisicing anim excepteur
-              nostrud magna nostrud aliqua dolor. Sunt aute est duis ut nulla
-              officia irure reprehenderit laborum fugiat dolore in elit.
-              Adipisicing do qui duis Lorem est.
-            </p>
-          </TimelineItem>
-        </Timeline>
+            <h3 className="vertical-timeline-element-title">Web Designer</h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              San Francisco, CA
+            </h4>
+            <p>User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="April 2013"
+            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Content Marketing for Web, Mobile and Social Media
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Online Course
+            </h4>
+            <p>Strategy, Social Media</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="November 2012"
+            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Agile Development Scrum Master
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Certification
+            </h4>
+            <p>Creative Direction, User Experience, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--education"
+            date="2002 - 2006"
+            iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+            icon={<SchoolIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Bachelor of Science in Interactive Digital Media Visual Imaging
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Bachelor Degree
+            </h4>
+            <p>Creative Direction, Visual Design</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+            icon={<StarIcon />}
+          />
+        </VerticalTimeline>
       </div>
     </Layout>
   )

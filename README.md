@@ -41,6 +41,7 @@ GraphQL
 - [React](https://reactjs.org/)
 - [GraphQL](https://graphql.org/)
 - [Sass](https://sass-lang.com/)
+- [Timeline](https://github.com/stephane-monnot/react-vertical-timeline)
 
 ## Contributing
 
