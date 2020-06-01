@@ -19,7 +19,7 @@ const Menu = () => {
       <div className="nav__bar">
         <ul className="nav__bar-ul">
           {items.map(item => (
-            <li>
+            <li key={Object.values(item)[0]}>
               <Link
                 className={`nav__bar__link`}
                 activeClassName="nav__bar__link-active"

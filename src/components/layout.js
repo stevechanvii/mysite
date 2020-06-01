@@ -29,10 +29,10 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <div className="circle circle__top" />
-      <div className="circle circle__bottom" />
-
       <div className="container">
+        <div className="circle circle__top" />
+        <div className="circle circle__bottom" />
+
         <Navbar />
         <main className="content">{children}</main>
         <Footer />
