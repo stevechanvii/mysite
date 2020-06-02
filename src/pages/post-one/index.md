@@ -5,4 +5,4 @@ title: "My First Gatsby Post"
 author: "Steve Chan"
 ---
 
-This is my very first blog post in Gatsby
+<h1>This is my very first blog post in Gatsby</h1>
