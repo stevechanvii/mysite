@@ -15,20 +15,80 @@ const ExperiencePage = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            contentStyle={{
+              borderTop: "0.5rem solid #F4A261",
+              borderRadius: "0.6rem",
+              fontSize: "1.8rem",
+              background: "#f5f5f5c4",
+            }}
+            contentArrowStyle={{ borderRight: "1.2rem solid F5F5F5" }}
+            date="Feb 2020 - Present"
+            iconStyle={{ background: "#F4A261", color: "#fff" }}
             icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
-              Creative Director
+              Frontend Developer
             </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading
-            </p>
+            <h4 className="vertical-timeline-element-subtitle">
+              Codejoy, Melbourne
+            </h4>
+            <ul className="exp__ul">
+              <li>
+                Working at a startup which just finished product design and
+                research, but was short of developers.
+              </li>
+              <li>
+                Developed an alpha Android App by Kotlin. Developed pose
+                estimation games by JavaScript and P5.js framework. Collected
+                exercises information using crawler by Python.
+              </li>
+              <li>
+                Being a small Agile team which need to handle urgent and
+                unplanned tasks in a limited of time.
+              </li>
+              <li>
+                Our products successfully attracted investors. I acquired the
+                abilities of rapid learning and the iterative development mode
+                in a flat management team.
+              </li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              borderTop: "0.5rem solid #E76F51",
+              borderRadius: "0.6rem",
+              fontSize: "1.8rem",
+              background: "#f5f5f5c4",
+            }}
+            contentArrowStyle={{ borderRight: "1.2rem solid F5F5F5" }}
+            date="Nov 2019 - Jun 2020"
+            iconStyle={{ background: "#E76F51", color: "#fff" }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Web Developer & Database Tutor
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Ausmotive Education, Melbourne
+            </h4>
+            <ul className="exp__ul">
+              <li>
+                An educational institution had just set up a new branch at
+                Monash, and planed to offer courses in IT, but lacks experienced
+                tutors and company website.
+              </li>
+              <li>
+                Designed the institute official website. Developed WeChat mini
+                program to support 40+ educational materials. Became one of the
+                popular database tutor.
+              </li>
+              <li>
+                Developed and deployed the website using Wix framework. Designed
+                database courses to help students pass exam requirements.
+              </li>
+              <li>The pass rate of my students is higher than 90%.</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

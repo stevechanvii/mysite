@@ -1,2 +1,15 @@
 .exp {
+  margin-top: 4rem;
+
+  &__ul {
+    list-style-position: outside;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+
+    li {
+      margin-top: 0.6rem;
+    }
+  }
 }

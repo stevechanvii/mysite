@@ -41,9 +41,7 @@ const IndexPage = () => (
             </span>
           </a>
         </div>
-        <div className="home__main__svg">
-          <Image />
-        </div>
+        <div className="home__main__svg">{/* <Image /> */}</div>
       </div>
     </div>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
