@@ -1,7 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 
-const AboutPage = () => {
+import Card from "../components/Card/Card"
+
+const ProjectPage = () => {
   return (
     <Layout>
       <div>
@@ -13,8 +15,9 @@ const AboutPage = () => {
           delectus!
         </p>
       </div>
+      <Card />
     </Layout>
   )
 }
 
-export default AboutPage
+export default ProjectPage

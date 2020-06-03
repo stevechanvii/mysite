@@ -6,6 +6,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import resume from "../assets/DanyangChen_Resume.pdf"
 
+import IndexImage from "../images/index_img.svg"
+
 const IndexPage = () => (
   <Layout>
     <SEO
@@ -40,7 +42,13 @@ const IndexPage = () => (
             </span>
           </a>
         </div>
-        <div className="home__main__svg">{/* <Image /> */}</div>
+        <div className="home__main__svg">
+          {/* <img
+            src={IndexImage}
+            alt="index image"
+            className="home__main__picture--img"
+          /> */}
+        </div>
       </div>
     </div>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

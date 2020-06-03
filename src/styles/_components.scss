@@ -27,3 +27,205 @@
     background-position: left 0 bottom 0;
   }
 }
+
+.card {
+  // functionality
+  // give a 3D-positioned element some perspective, give it a large number to make nicer.
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  width: 30rem;
+
+  &__side {
+    color: #fff;
+    font-size: 2rem;
+
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // if we set it to hidden, it basically hides the back part of an element.
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 1rem;
+    // to avoid image cover radius
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(var(--color-grey-dark-1), 0.15);
+
+    &--front {
+      background-color: rgba(245, 245, 245, 0.856);
+    }
+
+    &--back {
+      background-color: green;
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          var(--color-orange-light),
+          var(--color-orange-dark)
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // front side styling
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    // background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    background-image: linear-gradient(
+      to right bottom,
+      var(--color-orange-light),
+      var(--color-orange-dark)
+    );
+
+    // Center image
+    white-space: nowrap;
+    text-align: center;
+
+    &--img {
+      width: 50%;
+      vertical-align: middle;
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    // simply apply all the declarations that we have in the selector, in this case is only the padding
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(var(--color-orange-light), 0.85),
+        rgba(var(--color-orange-dark), 0.85)
+      );
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    &__title {
+      color: #000;
+    }
+
+    &__tech {
+      display: flex;
+      flex-wrap: wrap;
+
+      &--tag {
+        background-color: orangered;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  // font side styling
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  // @include respond($bp-medium) {
+  @media only screen and (max-width: $bp-medium) {
+    height: auto;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+
+    &__side {
+      position: relative;
+      height: auto;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        border-radius: 0 0 1rem 1rem;
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 5rem;
+    }
+
+    // font side styling
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 4rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
+  }
+}
