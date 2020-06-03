@@ -29,19 +29,20 @@
 }
 
 .card {
+  --color-background: rgba(245, 245, 245, 0.856);
   // functionality
   // give a 3D-positioned element some perspective, give it a large number to make nicer.
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 40rem;
   width: 30rem;
 
   &__side {
     color: #fff;
     font-size: 2rem;
 
-    height: 50rem;
+    height: 40rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -56,20 +57,17 @@
     box-shadow: 0 1.5rem 4rem rgba(var(--color-grey-dark-1), 0.15);
 
     &--front {
-      background-color: rgba(245, 245, 245, 0.856);
+      background-color: var(--color-background);
     }
 
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
 
-      &-1 {
-        background-image: linear-gradient(
-          to right bottom,
-          var(--color-orange-light),
-          var(--color-orange-dark)
-        );
-      }
+      background-image: linear-gradient(
+        to right bottom,
+        var(--color-orange-light),
+        var(--color-orange-dark)
+      );
     }
   }
 
@@ -114,8 +112,8 @@
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 12rem;
-    right: 2rem;
+    top: 16rem;
+    right: 1rem;
     width: 75%;
   }
 
@@ -124,17 +122,9 @@
     // simply apply all the declarations that we have in the selector, in this case is only the padding
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-
-    &--1 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(var(--color-orange-light), 0.85),
-        rgba(var(--color-orange-dark), 0.85)
-      );
-    }
   }
 
-  &__details {
+  &__info {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -146,47 +136,53 @@
     &__tech {
       display: flex;
       flex-wrap: wrap;
+      margin-top: 1rem;
 
-      &--tag {
+      &--label {
         background-color: orangered;
-        padding: 0.5rem 1rem;
-        border-radius: 1rem;
+        padding: 0.4rem 1.5rem;
+        border-radius: 0.4rem;
         margin-right: 1rem;
-        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        // box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.445);
       }
     }
   }
 
-  // font side styling
-  &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
-  }
+  // back side styling
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 1.7rem;
 
-  &__price-box {
-    text-align: center;
-    margin-bottom: 8rem;
-  }
+    &__details {
+      margin: 2rem 1rem;
 
-  &__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
+      &-ul {
+        margin-left: 2rem;
 
-  &__price-value {
-    font-size: 6rem;
-    font-weight: 100;
+        &-li {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem;
+    }
   }
 
   // @include respond($bp-medium) {
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-small) {
     height: auto;
+    width: 90%;
     border-radius: 1rem;
-    background-color: #fff;
+    background-color: var(--color-background);
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
     &__side {
@@ -206,26 +202,123 @@
       transform: rotateY(0);
     }
 
-    &__details {
-      padding: 1rem 5rem;
+    &__info {
+      padding: 1rem;
     }
 
     // font side styling
-    &__cta {
-      position: relative;
-      top: 0%;
-      left: 0;
-      transform: translate(0);
-      width: 100%;
-      padding: 7rem 4rem 4rem 4rem;
-    }
+  }
+}
 
-    &__price-box {
-      margin-bottom: 4rem;
-    }
+.a__underline {
+  --line: #646b8c;
+  --color: #2b3044;
+  text-decoration: none;
+  color: var(--color);
+  position: relative;
 
-    &__price-value {
-      font-size: 4rem;
+  span {
+    background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: var(--background-size, 100%) 1px;
+    transition: background-size 0.2s linear var(--background-delay, 0.15s);
+    font-size: 16px;
+    line-height: 20px;
+    transform: translateZ(0);
+  }
+
+  svg {
+    vertical-align: top;
+    display: inline;
+    line-height: 1;
+    width: 13px;
+    height: 20px;
+    position: relative;
+    left: -2px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+    stroke: var(--line);
+    stroke-dasharray: 7.95 30;
+    stroke-dashoffset: var(--stroke-dashoffset, 46);
+    transition: stroke-dashoffset var(--stroke-duration, 0.15s)
+      var(--stroke-easing, linear) var(--stroke-delay, 0s);
+  }
+
+  &:hover {
+    --background-size: 0%;
+    --background-delay: 0s;
+    --stroke-dashoffset: 26;
+    --stroke-duration: 0.3s;
+    --stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
+    --stroke-delay: 0.195s;
+  }
+}
+
+.btn {
+  &__effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: var(--color-grey-light-1);
+    text-transform: capitalize;
+    /* background-color: - add your own background-color */
+    font: {
+      family: "Roboto", sans-serif; /* put your font-family */
+      size: 18px;
+    }
+    padding: 0.8rem 0;
+    width: 45%;
+    border-radius: 0.6rem;
+    overflow: hidden;
+
+    &-left {
+      background-color: #e76f51;
+      transition: all 0.2s linear 0s;
+
+      &-view {
+        &:before {
+          background-image: url("../images/logo-internet.svg");
+        }
+      }
+
+      &-git {
+        &:before {
+          background-image: url("../images/logo-github.svg");
+        }
+      }
+
+      &:before {
+        content: " ";
+        background-size: 2rem 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: -30px;
+        width: 30px;
+        height: 100%;
+        background-color: rgba(#fff, 0.3);
+        border-radius: 0px 0.6rem 0.6rem 0px;
+        transition: all 0.2s linear 0s;
+        text-align: center;
+      }
+
+      &:hover {
+        text-indent: -30px;
+
+        &:before {
+          right: 0;
+          text-indent: 0px;
+        }
+      }
     }
   }
 }
