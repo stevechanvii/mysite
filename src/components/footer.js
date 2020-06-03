@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       © {new Date().getFullYear()} Developed by
       {` `}
-      <a href="" class="a__underline">
+      <a href="" className="a__underline">
         <span>Danyang Chen</span>
         <svg viewBox="0 0 13 20">
           <polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" />

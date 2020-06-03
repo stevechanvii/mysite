@@ -185,6 +185,10 @@
     background-color: var(--color-background);
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
+    &__picture--img {
+      max-width: 20rem;
+    }
+
     &__side {
       position: relative;
       height: auto;
