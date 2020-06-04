@@ -10,7 +10,7 @@ import tour from "../images/projects/tour.svg"
 import search from "../images/projects/search.svg"
 
 /* Color palettes
- * https://coolors.co/f94144-f3722c-f8961e-f9c74f-90be6d-43aa8b-577590
+ * https://coolors.co/gradient-palette/ff1900-f9bc2c?number=7
  * 
  * Data formate
 {
@@ -93,7 +93,7 @@ export default [
     ],
   },
   {
-    title: "stevechan",
+    title: "SteveChanVII.me",
     backgroundStyle: {
       backgroundImage: "linear-gradient(to right bottom, #ff7e5f, #feb47b)",
     },
@@ -115,7 +115,7 @@ export default [
     button: [
       {
         name: "Demo",
-        link: "stevechanvii.me",
+        link: "http://stevechanvii.me/",
         style: "btn__effect-left-view",
         color: "#FF6944",
       },
