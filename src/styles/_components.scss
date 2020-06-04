@@ -299,6 +299,12 @@
         }
       }
 
+      &-google-play {
+        &:before {
+          background-image: url("../images/logo-google-play.svg");
+        }
+      }
+
       &:before {
         content: " ";
         background-size: 2rem 2rem;
