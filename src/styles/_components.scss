@@ -36,7 +36,7 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 40rem;
+  height: 35rem;
   width: 27rem;
   margin: 1rem;
   // box-shadow: var(--shadow-dark);
@@ -68,8 +68,8 @@
 
       background-image: linear-gradient(
         to right bottom,
-        var(--color-orange-light),
-        var(--color-orange-dark)
+        var(--color-orange-dark),
+        var(--color-orange-light)
       );
     }
   }
@@ -103,7 +103,7 @@
     text-align: center;
 
     &--img {
-      width: 50%;
+      height: 60%;
       vertical-align: middle;
     }
   }
@@ -189,6 +189,7 @@
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
     &__picture--img {
+      height: 80%;
       max-width: 18rem;
     }
 
