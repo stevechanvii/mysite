@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 :root {
+  --color-background-primary: #fff;
+
   --color-blue: #5c629e;
   --color-blue-light: #d3daed;
   --color-blue-dark: #2e358f;
@@ -19,8 +21,12 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
 
+  --color-title: #585858;
+  --color-subtitle: #797979;
+  --color-paragraph: #4d4d4d;
+
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --shadow-light: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 
   --line: 1px solid var(--color-grey-light-1);
 }
@@ -60,4 +66,6 @@ body {
 
   width: 100%;
   height: 100%;
+
+  background-color: var(--color-background-primary);
 }

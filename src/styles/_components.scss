@@ -29,20 +29,23 @@
 }
 
 .card {
-  --color-background: rgba(245, 245, 245, 0.856);
+  // --color-background: rgba(245, 245, 245, 0.77);
+  --color-background: #fff;
   // functionality
   // give a 3D-positioned element some perspective, give it a large number to make nicer.
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
   height: 40rem;
-  width: 30rem;
+  width: 27rem;
+  margin: 1rem;
+  // box-shadow: var(--shadow-dark);
 
   &__side {
     color: #fff;
     font-size: 2rem;
 
-    height: 40rem;
+    height: 35rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -54,7 +57,7 @@
     border-radius: 1rem;
     // to avoid image cover radius
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(var(--color-grey-dark-1), 0.15);
+    box-shadow: var(--shadow-light);
 
     &--front {
       background-color: var(--color-background);
@@ -82,7 +85,7 @@
   // front side styling
   &__picture {
     background-size: cover;
-    height: 23rem;
+    height: 20rem;
     // background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
@@ -112,8 +115,8 @@
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 16rem;
-    right: 1rem;
+    top: 14rem;
+    right: 0.6rem;
     width: 75%;
   }
 
@@ -130,7 +133,7 @@
     margin: 1rem;
 
     &__title {
-      color: #000;
+      color: var(--color-grey-dark-2);
     }
 
     &__tech {
@@ -140,7 +143,7 @@
 
       &--label {
         background-color: orangered;
-        padding: 0.4rem 1.5rem;
+        padding: 0.3rem 1.3rem;
         border-radius: 0.4rem;
         margin-right: 1rem;
         margin-bottom: 1rem;
@@ -186,7 +189,7 @@
     box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
 
     &__picture--img {
-      max-width: 20rem;
+      max-width: 18rem;
     }
 
     &__side {
@@ -272,6 +275,7 @@
     /* background-color: - add your own background-color */
     font: {
       family: "Roboto", sans-serif; /* put your font-family */
+      weight: 100;
       size: 18px;
     }
     padding: 0.8rem 0;
