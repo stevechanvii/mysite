@@ -73,7 +73,7 @@ export default [
     ],
     content: [
       "Led an agile team to complete a cross-platform App successfully in 6 weeks.",
-      "Machine Learning is used to allergies detection and text recognition.",
+      "Machine Learning is used for allergies detection and text recognition.",
       "Download available from Google Play.",
     ],
     button: [
@@ -163,7 +163,7 @@ export default [
   {
     title: "Devloper Portfolio",
     backgroundStyle: {
-      backgroundImage: "linear-gradient(to right bottom, #A7BEE1, #D6ECF3)",
+      backgroundImage: "linear-gradient(to right bottom, #98B2DA, #C1D9EB)",
     },
     image: Portfolio,
     imageTitle: "Full Stack",

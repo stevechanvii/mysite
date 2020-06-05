@@ -33,6 +33,7 @@ const IndexPage = () => (
             href={resume}
             className="home__main__intro__download"
             target="_blank"
+            rel="noreferrer"
           >
             <span className="home__main__intro__download-visible">
               Download Resume

@@ -20,9 +20,9 @@ const ProjectPage = () => {
             <div className="card__desc">
               <div className="card__desc__details">
                 <ul className="card__desc__details-ul">
-                  {project.content.map((p, index) => (
+                  {project.content.map((paragraph, index) => (
                     <li className="card__desc__details-ul-li" key={index}>
-                      {p}
+                      {paragraph}
                     </li>
                   ))}
                 </ul>
@@ -35,6 +35,7 @@ const ProjectPage = () => {
                     style={{ background: btn.color }}
                     key={index}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {btn.name}
                   </a>

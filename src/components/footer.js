@@ -6,7 +6,7 @@ const Footer = () => {
       © {new Date().getFullYear()} Designed and developed by
       {` `}
       <a href="" className="a__underline">
-        <span>Danyang(Steve) Chen</span>
+        <span>Steve (Danyang) Chen</span>
         <svg viewBox="0 0 13 20">
           <polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" />
         </svg>

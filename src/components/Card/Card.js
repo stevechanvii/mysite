@@ -2,8 +2,7 @@ import React from "react"
 
 import classNames from "classnames"
 import PropTypes from "prop-types"
-
-import GitHubIcon from "@material-ui/icons/GitHub"
+import { useInView } from "react-intersection-observer"
 
 const Card = ({
   backgroundStyle,

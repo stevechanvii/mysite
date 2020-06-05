@@ -1,0 +1,121 @@
+.contact {
+  //   height: 40rem;
+  margin-top: 10rem;
+
+  &__main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 75%;
+    min-height: 25rem;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(#000, 0.15);
+    background-color: rgba(#fff, 0.6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: 2rem;
+    color: var(--color-grey-dark-1);
+    transform: skewX(-12deg);
+
+    /* doesn't work because in __shape there is already a transform
+    & > * {
+        transform: skewX(12deg);
+    }
+    */
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      transform: skewX(0);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    &__shape {
+      width: 15rem;
+      height: 15rem;
+      float: left;
+      // defines a shape—which may be non-rectangular—around which adjacent inline content could wrap
+      //   -webkit-shape-outside: circle(50% at 50% 50%);
+      //   shape-outside: circle(50% at 50% 50%);
+
+      // defines a circle
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+
+      transform: translateX(-3rem) skewX(12deg);
+      position: relative;
+
+      @media only screen and (max-width: $bp-small) {
+        transform: translateX(-3rem) skewX(0);
+      }
+    }
+
+    &__img {
+      height: 100%;
+      transform: translateX(-3.5rem) scale(1.4);
+      backface-visibility: hidden;
+      transition: all 0.5s;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      transform: skewX(12deg);
+      font-weight: 200;
+
+      &-email {
+        display: flex;
+        align-items: center;
+        margin-top: 1.5rem;
+      }
+
+      &-other {
+        display: flex;
+        margin-top: 1.5rem;
+      }
+
+      &-logo {
+        height: 4rem;
+        margin-right: 1.5rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        transform: skewX(0);
+        margin-top: 2rem;
+      }
+    }
+
+    &__caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 20%);
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.5s;
+      backface-visibility: hidden;
+    }
+
+    &:hover &__caption {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+      transform: translateX(-3rem) scale(1);
+      // give a blur and darken the image
+      filter: blur(3px) brightness(80%);
+    }
+  }
+}
