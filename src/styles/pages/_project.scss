@@ -1,6 +1,11 @@
 .project {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 5rem;
+  margin-bottom: 1rem;
+
+  @media only screen and (max-width: 1010px) {
+    justify-content: space-evenly;
+  }
 }
