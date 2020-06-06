@@ -218,7 +218,7 @@
   }
 }
 
-.a__underline {
+.arrow {
   --line: #646b8c;
   --color: #2b3044;
   text-decoration: none;
@@ -231,13 +231,13 @@
     background-repeat: no-repeat;
     background-size: var(--background-size, 100%) 1px;
     transition: background-size 0.2s linear var(--background-delay, 0.15s);
-    font-size: 16px;
+    // font-size: 16px;
     line-height: 20px;
     transform: translateZ(0);
   }
 
   svg {
-    vertical-align: top;
+    vertical-align: middle;
     display: inline;
     line-height: 1;
     width: 13px;

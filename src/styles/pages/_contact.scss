@@ -1,13 +1,14 @@
 .contact {
   //   height: 40rem;
-  margin-top: 10rem;
+  margin-top: 7rem;
 
   &__main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 75%;
-    min-height: 25rem;
+
+    width: 80%;
+    min-height: 28rem;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(#000, 0.15);
     background-color: rgba(#fff, 0.6);
@@ -39,8 +40,8 @@
     }
 
     &__shape {
-      width: 15rem;
-      height: 15rem;
+      width: 20rem;
+      height: 20rem;
       float: left;
       // defines a shape—which may be non-rectangular—around which adjacent inline content could wrap
       //   -webkit-shape-outside: circle(50% at 50% 50%);
@@ -50,17 +51,19 @@
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
 
-      transform: translateX(-3rem) skewX(12deg);
+      // transform: translateX(-3rem) skewX(12deg);
+      transform: skewX(12deg);
       position: relative;
 
       @media only screen and (max-width: $bp-small) {
-        transform: translateX(-3rem) skewX(0);
+        transform: skewX(0);
       }
     }
 
     &__img {
       height: 100%;
-      transform: translateX(-3.5rem) scale(1.4);
+      // transform: translateX(-3.5rem) scale(1.4);
+      transform: scale(1.2);
       backface-visibility: hidden;
       transition: all 0.5s;
     }
@@ -74,17 +77,41 @@
       &-email {
         display: flex;
         align-items: center;
-        margin-top: 1.5rem;
+        margin-top: 3rem;
+        position: relative;
+
+        &-span {
+          font-size: 1.9rem;
+          cursor: pointer;
+        }
+
+        &-copy {
+          position: absolute;
+          color: #55a630;
+          right: -3rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
       }
 
       &-other {
         display: flex;
         margin-top: 1.5rem;
+
+        @media only screen and (max-width: $bp-small) {
+          justify-content: center;
+          margin-top: 2rem;
+        }
       }
 
       &-logo {
-        height: 4rem;
-        margin-right: 1.5rem;
+        height: 5rem;
+        margin-right: 2rem;
+        transition: all 0.3s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
 
       @media only screen and (max-width: $bp-small) {
@@ -100,7 +127,7 @@
       transform: translate(-50%, 20%);
       color: #fff;
       text-transform: uppercase;
-      font-size: 1.7rem;
+      font-size: 2.1rem;
       text-align: center;
       opacity: 0;
       transition: all 0.5s;
@@ -113,7 +140,8 @@
     }
 
     &:hover &__img {
-      transform: translateX(-3rem) scale(1);
+      // transform: translateX(-3rem) scale(1);
+      transform: scale(1);
       // give a blur and darken the image
       filter: blur(3px) brightness(80%);
     }

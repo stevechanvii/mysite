@@ -103,8 +103,8 @@ export default [
       { name: "React", color: "#07C8F9" },
       { name: "Gatsby.js", color: "#8055AA" },
       { name: "SCSS", color: "#D77EAB" },
+      { name: "GraphQL", color: "#E00298" },
       { name: "AWS", color: "#48525E" },
-      { name: "Material UI", color: "#0481CB" },
       { name: "SVG", color: "#E7A522" },
     ],
     content: [
