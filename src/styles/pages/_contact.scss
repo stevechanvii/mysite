@@ -1,6 +1,9 @@
 .contact {
-  //   height: 40rem;
-  margin-top: 7rem;
+  margin-top: 15rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 10rem;
+  }
 
   &__main {
     display: flex;
@@ -29,9 +32,7 @@
       width: 100%;
       padding: 4rem;
       padding-left: 7rem;
-    }
 
-    @media only screen and (max-width: $bp-small) {
       transform: skewX(0);
       flex-direction: column;
       justify-content: center;
@@ -43,9 +44,6 @@
       width: 20rem;
       height: 20rem;
       float: left;
-      // defines a shape—which may be non-rectangular—around which adjacent inline content could wrap
-      //   -webkit-shape-outside: circle(50% at 50% 50%);
-      //   shape-outside: circle(50% at 50% 50%);
 
       // defines a circle
       -webkit-clip-path: circle(50% at 50% 50%);
@@ -55,7 +53,7 @@
       transform: skewX(12deg);
       position: relative;
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: $bp-medium) {
         transform: skewX(0);
       }
     }
@@ -98,7 +96,7 @@
         display: flex;
         margin-top: 1.5rem;
 
-        @media only screen and (max-width: $bp-small) {
+        @media only screen and (max-width: $bp-medium) {
           justify-content: center;
           margin-top: 2rem;
         }
@@ -114,7 +112,7 @@
         }
       }
 
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: $bp-medium) {
         transform: skewX(0);
         margin-top: 2rem;
       }
@@ -140,7 +138,6 @@
     }
 
     &:hover &__img {
-      // transform: translateX(-3rem) scale(1);
       transform: scale(1);
       // give a blur and darken the image
       filter: blur(3px) brightness(80%);

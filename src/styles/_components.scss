@@ -1,17 +1,13 @@
 .circle {
   width: 50%;
   height: 50%;
-  background-size: 60%;
+  background-size: 40%;
   background-repeat: no-repeat;
   z-index: -1;
   position: relative;
-  // background-image: linear-gradient(
-  //   to right top,
-  //   var(--color-orange-light),
-  //   var(--color-orange-dark)
-  // );
 
   &__top {
+    background-size: 35%;
     position: absolute;
     top: 0;
     right: 0;
@@ -24,7 +20,7 @@
     bottom: 0;
     left: 0;
     background-image: url("../images/circle-bottom-left.svg");
-    background-position: left 0 bottom 0;
+    background-position: left bottom;
   }
 }
 

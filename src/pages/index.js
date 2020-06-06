@@ -6,7 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import resume from "../assets/DanyangChen_Resume.pdf"
 
-import IndexImage from "../images/index_img.svg"
+import IndexImage from "../images/img-index.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -25,9 +25,9 @@ const IndexPage = () => (
       <div className="home__main">
         <div className="home__main__intro">
           <p className="home__main__intro__desc">
-            Hi I'm Steve, welcome to my portfolio. I am a front-end developer
-            who loves photography and creating. To become a full-stack developer
-            & network security specialist will be my long-term goal.
+            Hi I'm Steve, welcome to my portfolio. I am a frontend developer who
+            loves photography and creating. To become a full-stack developer &
+            network security specialist will be my long-term goal.
           </p>
           <a
             href={resume}
@@ -44,11 +44,11 @@ const IndexPage = () => (
           </a>
         </div>
         <div className="home__main__svg">
-          {/* <img
+          <img
             src={IndexImage}
             alt="index image"
             className="home__main__picture--img"
-          /> */}
+          />
         </div>
       </div>
     </div>
