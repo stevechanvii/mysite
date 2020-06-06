@@ -16,7 +16,7 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    margin: 2rem 4rem;
+    margin: 2rem 3rem;
     height: 94vh;
   }
 }
@@ -127,6 +127,14 @@
       position: relative;
       font-size: 2.2rem;
 
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 350px) {
+        font-size: 1.8rem;
+      }
+
       &:active,
       &:hover {
         font-weight: 400;
@@ -141,6 +149,14 @@
         margin-top: -1.9rem;
         top: 0;
         transition: all 0.3s;
+
+        @media only screen and (max-width: $bp-smallest) {
+          font-size: 3.5rem;
+        }
+
+        @media only screen and (max-width: 350px) {
+          font-size: 3.4rem;
+        }
       }
 
       &::before {
@@ -190,6 +206,10 @@
     &__separate {
       display: none;
     }
+  }
+
+  @media only screen and (max-width: 350px) {
+    font-size: 1.3rem;
   }
 }
 
