@@ -39,7 +39,7 @@ export default [
       { name: "Mathdro API", color: "#48525E" },
     ],
     content: [
-      "A single-page application developed by React framework.",
+      "A coronavirus tracker based on different countries developed by React.",
       "Responsive design (map/table) to fit different screen size.",
       "Deployed in GitHub page.",
     ],
@@ -72,7 +72,7 @@ export default [
       { name: "OpenFoodFact API", color: "#48525E" },
     ],
     content: [
-      "Led an agile team to complete a cross-platform App successfully in 6 weeks.",
+      "Android and iOS Apps for people who suffer from allergy and intolerance.",
       "Machine Learning is used for allergies detection and text recognition.",
       "Download available from Google Play.",
     ],
@@ -108,7 +108,7 @@ export default [
       { name: "SVG", color: "#E7A522" },
     ],
     content: [
-      "A single-page application developed by React and Gatsby framework.",
+      "My personal portfolio developed by React and Gatsby framework.",
       "Responsive design by SCSS framework with beautiful animation.",
       "Deployed in AWS Amplify.",
     ],
@@ -138,8 +138,8 @@ export default [
       { name: "Tensorflow", color: "#F18201" },
       { name: "JavaScript", color: "#F1DA1C" },
       { name: "P5.js", color: "#E71B60" },
-      { name: "HTML5", color: "#E44D27" },
-      { name: "Github", color: "#000000" },
+      { name: "Bootstrap", color: "#7852B2" },
+      { name: "Babel", color: "#F5DA55" },
     ],
     content: [
       "A whack a mole game developed by JavaScript and Tensorflow PoseNet.",
@@ -245,8 +245,9 @@ export default [
       { name: "JavaScript", color: "#F1DA1C" },
     ],
     content: [
+      "A job seek website for both seeker and recruiter.",
       "Led the completion of the recruitment system as the main developer and system architect using Java Web.",
-      "Familiarised with the MVC model and agile development life cycle.",
+      "Familiarised with the MVC model and agile life cycle.",
     ],
     button: [
       {

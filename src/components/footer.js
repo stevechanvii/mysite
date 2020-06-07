@@ -6,7 +6,10 @@ const Footer = () => {
       <div>
         © {new Date().getFullYear()} Developed by
         {` `}
-        <a href="" className="arrow">
+        <a
+          href="https://www.linkedin.com/in/danyang-chen-19a753169/"
+          className="arrow"
+        >
           <span>Danyang Chen (SteveChan)</span>
           <svg viewBox="0 0 13 20">
             <polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" />

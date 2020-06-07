@@ -1,8 +1,7 @@
 import React from "react"
 
-import classNames from "classnames"
 import PropTypes from "prop-types"
-import { useInView } from "react-intersection-observer"
+// import { useInView } from "react-intersection-observer"
 
 const Card = ({
   backgroundStyle,

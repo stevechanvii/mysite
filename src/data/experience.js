@@ -62,12 +62,27 @@ export default [
     subtitle: "Master of Information Technology",
     date: "Nov 2016 - Oct 2019",
     content: [
+      "WAN: 71.5 Distinction",
       "Awarded IT International Merit Scholarship.",
       "Winner of Post Graduate Industry Experience 2019.",
       "Winner of Capture Monash photography competition.",
     ],
     icon: SchoolIcon,
     color: "#F9C74F",
+  },
+  {
+    title: "Frontend Developer",
+    subtitle: "Hygia, Monash Graduation Project",
+    date: "Feb 2019 - Jun 2019",
+    content: [
+      "Worked at a team to develop a cross-platform App for people who suffer from allergy and intolerance.",
+      "Led an agile team to analyse, design and develop the App by React Native framework in 12 weeks.",
+      "Experienced a complete project life cycle, including market analysis, project approval, team management, conflict resolution, development, testing, documentation and elevator pitch.",
+      "We are the only team which supported three platforms including Android, iOS and website.",
+      "Winner of Post Graduate Industry Experience 2019.",
+    ],
+    icon: WorkIcon,
+    color: "#f4978e",
   },
   {
     title: "Monash University postgraduate coding bootcamp",
