@@ -40,7 +40,7 @@ export default [
     ],
     content: [
       "A coronavirus tracker based on different countries developed by React.",
-      "Responsive design (map/table) to fit different screen size.",
+      "Responsive design (map/table) to fit the different screen sizes.",
       "Deployed in GitHub page.",
     ],
     button: [
@@ -108,7 +108,7 @@ export default [
       { name: "SVG", color: "#E7A522" },
     ],
     content: [
-      "My personal portfolio developed by React and Gatsby framework.",
+      "My portfolio developed by React and Gatsby framework.",
       "Responsive design by SCSS framework with beautiful animation.",
       "Deployed in AWS Amplify.",
     ],
@@ -143,7 +143,7 @@ export default [
     ],
     content: [
       "A whack a mole game developed by JavaScript and Tensorflow PoseNet.",
-      "How to play? Pose estimation (Arms up and down to hit 1st or 3rd columns, clap to hit the middle column)",
+      "Running in a browser and use artificial intelligence to determine human poses and hit the mole",
     ],
     button: [
       {
@@ -176,7 +176,7 @@ export default [
       { name: "Github", color: "#000000" },
     ],
     content: [
-      "Social network for developers using MERN stack (MongoDB, Express, React, Node.js). Redux is used for a state management.",
+      "A social network for developers using MERN stack (MongoDB, Express, React, Node.js). Redux is used for state management.",
       "Use JSON Web Token for user authentication.",
       "Deployed in Heroku.",
     ],
@@ -211,7 +211,7 @@ export default [
       { name: "CSS3", color: "#254CE2" },
     ],
     content: [
-      "Customize your own burger and ordered! This App is created by React and Redux framework.",
+      "Customize your burger and order! This App is created by React and Redux framework.",
       "Firebase is used to Token authentication and save orders.",
       "Deployed in Firebase.",
     ],
@@ -245,9 +245,8 @@ export default [
       { name: "JavaScript", color: "#F1DA1C" },
     ],
     content: [
-      "A job seek website for both seeker and recruiter.",
-      "Led the completion of the recruitment system as the main developer and system architect using Java Web.",
-      "Familiarised with the MVC model and agile life cycle.",
+      "A job-seeking website for both seeker and recruiter.",
+      "Worked as the primary developer and system architect, and led the completion of the recruitment system by Java Web.",
     ],
     button: [
       {
@@ -298,7 +297,7 @@ export default [
       { name: "GitHub", color: "#000000" },
     ],
     content: [
-      "A learning project with pure HTML5 and advanced CSS(SCSS) to implement beautiful design and animation.",
+      "Programed a learning project with pure HTML5 and advanced CSS(SCSS) to implement beautiful design and animation.",
       "Video is used to make the background dynamic.",
     ],
     button: [
@@ -330,8 +329,8 @@ export default [
       { name: "GitHub", color: "#000000" },
     ],
     content: [
-      "A learning project with pure HTML5 and advanced CSS(SCSS) to implement beautiful design and animation.",
-      "Use SVG and Font Awesome to make graph looking nicer.",
+      "Programed a learning project with pure HTML5 and advanced CSS(SCSS) to implement beautiful design and animation.",
+      "Use SVG and Font Awesome to make the graph looking nicer.",
     ],
     button: [
       {

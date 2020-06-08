@@ -333,3 +333,24 @@
     }
   }
 }
+
+.modal {
+  &__header {
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--color-grey-dark-1);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-grey-dark-3);
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  &__content {
+    font-size: 1.8rem;
+    color: var(--color-grey-dark-2);
+    margin: 0.5rem 2rem 2rem 2rem;
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+}

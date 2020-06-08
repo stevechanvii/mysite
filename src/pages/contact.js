@@ -27,7 +27,7 @@ const ContactPage = () => {
           </figure>
           <div className="contact__main__text">
             <h3 className="heading-tertiary u-margin-bottom-small">
-              Interesting? Get in touch now :)
+              Interested? Get in touch now :)
             </h3>
             <div className="contact__main__text-email">
               <img
