@@ -21,6 +21,7 @@ const Dialog = props => {
     <span
       className="rodal-close"
       onClick={props.onClose}
+      role="presentation"
       onKeyPress={event => {
         if (props.onClose && event.which === 13) {
           props.onClose(event)
@@ -178,6 +179,7 @@ class Modal extends React.Component {
           this.el = el
         }}
         onKeyUp={this.onKeyUp}
+        role="presentation"
       >
         {Mask}
         <Dialog {...this.props} animationType={animationType}>
