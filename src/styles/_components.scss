@@ -354,6 +354,11 @@
     color: var(--color-grey-dark-2);
     margin: 0.5rem 2rem 2rem 2rem;
 
+    @media only screen and (max-width: $bp-medium) {
+      font-weight: 300;
+      color: var(--color-grey-dark-1);
+    }
+
     p {
       margin-top: 1rem;
     }
