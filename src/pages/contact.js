@@ -121,7 +121,10 @@ const ContactPage = () => {
           animation={modalAnimation[getRndInteger(0, 8)]}
           width={560}
         >
-          <p className="modal__header">{modalData.title}</p>
+          <p className="modal__header">
+            {new Date().getHours() >= 18 ? "Good evening" : "G'day"}
+            {modalData.title}
+          </p>
           <div className="modal__content">
             {modalData.content.map((data, index) => (
               <p key={index}>{data}</p>

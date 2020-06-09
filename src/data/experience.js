@@ -47,7 +47,7 @@ export default [
   {
     title: "Web Developer & Database Mentor",
     subtitle: "Ausmotive Education, Melbourne",
-    date: "Nov 2019 - Jun 2020",
+    date: "Nov 2019 - May 2020",
     content: [
       "An educational institution had just set up a new branch at Monash, and planned to offer courses in IT, but lacks experienced mentors and company website.",
       "Designed the institute's official website. Developed a WeChat mini program to support 40+ educational materials.",
