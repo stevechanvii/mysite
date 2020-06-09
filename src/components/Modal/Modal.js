@@ -158,6 +158,7 @@ class Modal extends React.Component {
         className="rodal-mask"
         style={customMaskStyles}
         onClick={closeMaskOnClick ? onClose : void 0}
+        role="presentation"
       />
     ) : null
 

@@ -34,7 +34,11 @@ const Menu = () => {
 
   return (
     <nav className="nav">
-      <div className="nav__logo" onClick={() => showModal()}>
+      <div
+        className="nav__logo"
+        onClick={() => showModal()}
+        role="presentation"
+      >
         <p className="nav__logo__text"></p>
       </div>
       <Modal

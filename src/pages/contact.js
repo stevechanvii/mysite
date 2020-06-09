@@ -109,6 +109,7 @@ const ContactPage = () => {
               <div
                 className="contact__main__text-logo contact__main__text-logo-sc"
                 onClick={() => showModal()}
+                role="presentation"
               >
                 <p className="contact__main__text-logo-sc-name">SC</p>
               </div>
