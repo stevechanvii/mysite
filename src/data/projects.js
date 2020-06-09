@@ -302,13 +302,13 @@ export default [
     button: [
       {
         name: "Demo",
-        link: "https://github.com/stevechanvii/AdventurousTours",
+        link: "https://stevechanvii.github.io/AdventurousTours/",
         style: "btn__effect-left-view",
         color: "#F23F5F",
       },
       {
         name: "GitHub",
-        link: "https://stevechanvii.github.io/AdventurousTours/",
+        link: "https://github.com/stevechanvii/AdventurousTours",
         style: "btn__effect-left-git",
         color: "#F56B72",
       },
@@ -334,13 +334,13 @@ export default [
     button: [
       {
         name: "Demo",
-        link: "stevechanvii.me",
+        link: "https://stevechanvii.github.io/RealProperty/index.html",
         style: "btn__effect-left-view",
         color: "#FFA70A",
       },
       {
         name: "GitHub",
-        link: "https://github.com/stevechanvii/mysite",
+        link: "https://github.com/stevechanvii/RealProperty",
         style: "btn__effect-left-git",
         color: "#FFBC1E",
       },
