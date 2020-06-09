@@ -82,6 +82,11 @@
           content: "\2196";
         }
 
+        @media only screen and (max-width: $bp-medium) {
+          font-weight: 300;
+          color: var(--color-grey-dark-1);
+        }
+
         @media only screen and (max-width: $bp-small) {
           &::before {
             content: "";

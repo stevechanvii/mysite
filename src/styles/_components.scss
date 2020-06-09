@@ -35,7 +35,12 @@
   height: 35rem;
   width: 27rem;
   margin: 2rem 1rem;
+  font-weight: 200;
   // box-shadow: var(--shadow-dark);
+
+  @media only screen and (max-width: $bp-medium) {
+    font-weight: 300;
+  }
 
   &__side {
     color: #fff;
@@ -272,7 +277,7 @@
     /* background-color: - add your own background-color */
     font: {
       family: "Roboto", sans-serif; /* put your font-family */
-      weight: 100;
+      weight: 200;
       size: 18px;
     }
     padding: 0.8rem 0;

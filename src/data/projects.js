@@ -173,7 +173,6 @@ export default [
       { name: "Node.js", color: "#72A861" },
       { name: "MongoDB", color: "#13924F" },
       { name: "JWT", color: "#D63AFE" },
-      { name: "Github", color: "#000000" },
     ],
     content: [
       "A social network for developers using MERN stack (MongoDB, Express, React, Node.js). Redux is used for state management.",
