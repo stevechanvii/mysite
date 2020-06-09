@@ -143,7 +143,7 @@ export default [
     ],
     content: [
       "A whack a mole game developed by JavaScript and Tensorflow PoseNet.",
-      "Running in a browser and use artificial intelligence to determine human poses and hit the mole",
+      "Running in the browser and use artificial intelligence to determine human poses to hit the mole.",
     ],
     button: [
       {
@@ -161,7 +161,7 @@ export default [
     ],
   },
   {
-    title: "Devloper Portfolio",
+    title: "Developer Portfolio",
     backgroundStyle: {
       backgroundImage: "linear-gradient(to right bottom, #98B2DA, #C1D9EB)",
     },

@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import resume from "../assets/DanyangChen_Resume.pdf"
 
 import IndexImage from "../images/img-index.svg"
 
@@ -28,7 +27,7 @@ const IndexPage = () => (
             network security specialist will be my long-term goal.
           </p>
           <a
-            href={resume}
+            href="https://resumedanyang.s3-ap-southeast-2.amazonaws.com/Danyang_Chen_resume.pdf"
             className="home__main__intro__download"
             target="_blank"
             rel="noreferrer"
