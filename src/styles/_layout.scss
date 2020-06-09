@@ -66,11 +66,11 @@
       }
 
       &::before {
-        opacity: 1;
+        display: block;
       }
 
       &::after {
-        opacity: 0;
+        display: none;
       }
     }
 
@@ -91,13 +91,15 @@
         content: "SteveChan";
         position: absolute;
         right: 0;
+        bottom: 0;
         transform: scaleX(0.4);
-        opacity: 0;
+
+        display: none;
       }
 
       &::after {
         content: "SC";
-        opacity: 1;
+        display: block;
       }
     }
   }

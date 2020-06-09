@@ -21,7 +21,7 @@ import CastForEducationIcon from "@material-ui/icons/CastForEducation"
 */
 export default [
   {
-    title: "Acquire AWS Certificate",
+    title: "Acquired AWS Certificate",
     subtitle: "Solutions Architect - Associate",
     date: "May 2020",
     content: [

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import Modal from "./Modal/Modal"
+import modalData from "../data/modal"
 
 const Menu = () => {
   const items = [
@@ -42,29 +43,11 @@ const Menu = () => {
         animation={modalAnimation[getRndInteger(0, 8)]}
         width={800}
       >
-        <p className="modal__header">G'day, greeting from Danyang!</p>
+        <p className="modal__header">{modalData.title}</p>
         <div className="modal__content">
-          <p>
-            Hi, I'm Danyang. Currently looking for frontend opportunities in
-            Melbourne. As a graduate of Monash University (Master of IT), I have
-            focused my career path and academic goal on frontend development,
-            especially React and React Native. Coding has made my life full of
-            challenges and a sense of accomplishment, and I pride myself as a
-            very effective leaner and developer.
-          </p>
-          <p>
-            During this difficult period, I do not stop learning. Apart from my
-            full-time job, I developed stevechanvii.me, and a Developer
-            Portfolio website by Node.js. My next goal is to become a full-stack
-            developer, and the good news is I just become an Amazon AWS
-            Certified Associate Architect. However, I know I still have a long
-            way to go, but I look forward to making my effort and applying my
-            skills to your company.
-          </p>
-          <p>
-            I am passionate about my career as a programmer. If you are
-            interested in my experiences and projects, please contact me.
-          </p>
+          {modalData.content.map((data, index) => (
+            <p key={index}>{data}</p>
+          ))}
         </div>
       </Modal>
       <div className="nav__bar">

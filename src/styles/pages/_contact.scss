@@ -72,15 +72,40 @@
       transform: skewX(12deg);
       font-weight: 200;
 
+      @media only screen and (max-width: 360px) {
+        font-size: 1.6rem;
+      }
+
+      &-info {
+        font-size: 1.5rem;
+        &::before {
+          content: "\2196";
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          &::before {
+            content: "";
+          }
+
+          &::after {
+            content: "\2198";
+          }
+        }
+      }
+
       &-email {
         display: flex;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 2rem;
         position: relative;
 
         &-span {
           font-size: 1.9rem;
           cursor: pointer;
+
+          @media only screen and (max-width: 360px) {
+            font-size: 1.4rem;
+          }
         }
 
         &-copy {
@@ -115,6 +140,29 @@
 
         &:hover {
           transform: scale(1.2);
+        }
+
+        &-sc {
+          width: 5rem;
+          cursor: pointer;
+          background-color: #f8e72d;
+          transition: all 0.5s;
+          transform-origin: left;
+          position: relative;
+          display: none;
+
+          &-name {
+            position: absolute;
+            font-weight: 400;
+            bottom: -0.7rem;
+            right: 0.2rem;
+            color: #323330;
+            font-size: 2.5rem;
+          }
+
+          @media only screen and (max-width: $bp-small) {
+            display: block;
+          }
         }
       }
 

@@ -23,7 +23,7 @@ const IndexPage = () => (
       <div className="home__main">
         <div className="home__main__intro">
           <p className="home__main__intro__desc">
-            Hi I'm Steve, welcome to my portfolio. I am a frontend developer who
+            Hello there, welcome to my portfolio. I am a frontend developer who
             loves photography and creating. To become a full-stack developer &
             network security specialist will be my long-term goal.
           </p>
