@@ -110,7 +110,7 @@ export default [
     content: [
       "My portfolio developed by React and Gatsby framework.",
       "Responsive design by SCSS framework with beautiful animation.",
-      "Deployed in AWS Amplify.",
+      "Deployed in AWS.",
     ],
     button: [
       {
