@@ -74,7 +74,7 @@ const ContactPage = () => {
             </div>
             <div className="contact__main__text-other">
               <a
-                href="https://www.linkedin.com/in/steve-danyang-chen-19a753169/"
+                href="https://www.linkedin.com/in/danyang-chen-19a753169/"
                 target="_blank"
                 rel="noreferrer"
               >
