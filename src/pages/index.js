@@ -27,7 +27,7 @@ const IndexPage = () => (
             network security specialist will be my long-term goal.
           </p>
           <a
-            href="https://resumedanyang.s3-ap-southeast-2.amazonaws.com/Danyang_Chen_resume.pdf"
+            href="https://resume.stevechanvii.me/"
             className="home__main__intro__download"
             target="_blank"
             rel="noreferrer"
