@@ -8,7 +8,7 @@ import IndexImage from "../images/img-index.svg"
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home"
+      title="Portfolio"
       keywords={[
         `danyang`,
         `danayng chen`,
