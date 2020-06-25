@@ -42,6 +42,10 @@
     font-weight: 300;
   }
 
+  &-scale {
+    animation: scale both 0.4s cubic-bezier(0.4, 0, 0, 1.5);
+  }
+
   &__side {
     color: #fff;
     font-size: 2rem;

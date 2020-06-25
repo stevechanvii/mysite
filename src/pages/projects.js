@@ -16,6 +16,7 @@ const ProjectPage = () => {
             title={project.title}
             labels={project.labels}
             key={index}
+            style={{ animationDelay: `${index * 120}ms` }}
           >
             <div className="card__desc">
               <div className="card__desc__details">

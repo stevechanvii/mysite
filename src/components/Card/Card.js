@@ -10,9 +10,10 @@ const Card = ({
   title,
   labels,
   children,
+  style,
 }) => {
   return (
-    <div className="card">
+    <div className="card card-scale" style={style}>
       <div className="card__side card__side--front">
         <div className="card__picture" style={backgroundStyle}>
           <span className="center__image"></span>
@@ -53,6 +54,7 @@ Card.propTypes = {
   imageTitle: PropTypes.string,
   title: PropTypes.string,
   labels: PropTypes.array,
+  style: PropTypes.object,
 }
 
 Card.defaultProps = {
@@ -61,6 +63,7 @@ Card.defaultProps = {
   imageTitle: "",
   title: "",
   labels: [],
+  style: {},
 }
 
 export default Card
