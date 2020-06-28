@@ -96,7 +96,7 @@ const ContactPage = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com/stevechan.vii/?hl=en"
+                href="https://www.instagram.com/stevechanvii.me/?hl=en"
                 target="_blank"
                 rel="noreferrer"
               >
