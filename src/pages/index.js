@@ -38,6 +38,7 @@ const IndexPage = () => {
                     },
                   ]}
                   wrapper="p"
+                  speed={50}
                   cursor={!animationState}
                   className="home__main__intro__desc"
                 />
@@ -52,10 +53,11 @@ const IndexPage = () => {
               {animationState === 1 ? (
                 <TypeAnimation
                   sequence={[
-                    `I am also passionate about hiking 🥾, camping 🏕️, surfing 🏄‍♂️, diving 🤿, coffee ☕ and ukulele 🎸, to become a life artist will be my long-term goal!`,
+                    `I am also passionate about hiking 🥾, camping 🏕️, surfing 🏄‍♂️, diving 🤿, coffee ☕ and ukulele 🎸. To become a life artist will be my long-term goal!`,
                     () => {},
                   ]}
                   wrapper="p"
+                  speed={50}
                   cursor={true}
                   className="home__main__intro__desc"
                 />
