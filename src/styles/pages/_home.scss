@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  margin: 4rem;
+  margin: 4rem 0 4rem 0;
 
   @media only screen and (max-width: $bp-largest) {
   }
@@ -37,7 +37,8 @@
 
   &__main {
     display: flex;
-    width: 100%;
+    flex: 1;
+    justify-content: space-between;
 
     @media only screen and (max-width: $bp-medium) {
       // width: 40rem;
@@ -127,7 +128,7 @@
     }
 
     &__svg {
-      margin: -10rem auto;
+      margin: -10rem 0 0 0;
       width: 50%;
 
       @media only screen and (max-width: $bp-medium) {

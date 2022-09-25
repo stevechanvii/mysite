@@ -7,6 +7,8 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Script } from "gatsby"
+
 // import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./navbar"
@@ -28,6 +30,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="container">
+        {/* <Script rel="stylesheet" href="css/justifiedGallery.css" /> */}
+        {/* <Script src="js/jquery.justifiedGallery.js"></Script> */}
         <div className="circle circle__top" />
         <div className="circle circle__bottom" />
 
