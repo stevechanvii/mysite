@@ -53,7 +53,7 @@ const IndexPage = () => {
               {animationState === 1 ? (
                 <TypeAnimation
                   sequence={[
-                    `I am also passionate about hiking 🥾, camping 🏕️, surfing 🏄‍♂️, diving 🤿, coffee ☕ and ukulele 🎸. To become a life artist will be my long-term goal!`,
+                    `I am also passionate about body building🏋️, hiking 🥾, camping 🏕️, surfing 🏄‍♂️, diving 🤿, coffee ☕ and ukulele 🎸. To become a life artist will be my long-term goal!`,
                     () => {},
                   ]}
                   wrapper="p"
