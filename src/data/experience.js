@@ -7,12 +7,12 @@ import HomeIcon from "@material-ui/icons/Home"
 import BackupIcon from "@material-ui/icons/Backup"
 import CastForEducationIcon from "@material-ui/icons/CastForEducation"
 
-import imgBeefNoodle from "../images/exp/beefNoodles.jpeg"
-import imgGuangzhou from "../images/exp/guangzhou.jpeg"
-import imgUni from "../images/exp/uni.jpeg"
-import imgAussie from "../images/exp/aussie.jpeg"
-import imgMonash from "../images/exp/graduate.jpeg"
-import imgOscer from "../images/exp/oscer.jpeg"
+import imgBeefNoodle from "../images/exp/beefNoodles.jpg"
+import imgGuangzhou from "../images/exp/guangzhou.jpg"
+import imgUni from "../images/exp/uni.jpg"
+import imgAussie from "../images/exp/aussie.jpg"
+import imgMonash from "../images/exp/graduate.jpg"
+import imgOscer from "../images/exp/oscer.jpg"
 import imgHeidi from "../images/exp/heidi.jpg"
 
 /* Color palettes
