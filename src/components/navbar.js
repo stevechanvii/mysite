@@ -9,7 +9,7 @@ const Menu = () => {
     { "": "About Me" },
     { experience: "Experience" },
     { projects: "Projects" },
-    { gallery: "Gallery" },
+    { myGallery: "Gallery" },
     { contact: "Contact" },
   ]
 

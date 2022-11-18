@@ -28,6 +28,7 @@
     "react-images": "^1.2.0-beta.7",
     "react-intersection-observer": "^8.26.2",
     "react-justified-grid": "^1.0.0",
+    "react-modal-image": "^2.6.0",
     "react-photo-gallery": "^8.0.0",
     "react-type-animation": "^2.1.1"
   },

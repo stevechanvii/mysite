@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import ModalImage from "react-modal-image"
 
 import VerticalTimeline from "../components/Timeline/VerticalTimeline"
 import VerticalTimelineElement from "../components/Timeline/VerticalTimelineElement"
@@ -35,6 +36,12 @@ const ExperiencePage = () => {
                   <li key={index}>{details}</li>
                 ))}
               </ul>
+
+              {exp.smallImg && (
+                <div style={{ marginTop: 10 }}>
+                  <ModalImage small={exp.smallImg} large={exp.smallImg} />
+                </div>
+              )}
             </VerticalTimelineElement>
           ))}
 
